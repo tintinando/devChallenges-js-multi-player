@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('img/bg.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 346px;
+    height: 520px;
+    background: #212936;
+    border-radius: 1.5rem;
+    padding: 20px;
+
+    img {
+        width: 310px;
+        height: 289px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    h4 {
+        color: #E5E7EB;
+        font-size: 1rem;
+    }
+
+    h6 {
+        color: #4D5562;
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+
+    .progress {
+        width: 100%;
+
+        .progress-time {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            border: none;
+            background-color: #E5E7EB;
+            position: relative;
+            border-radius: 2px;
+        }
+
+        .progress-value {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0%;
+            background-color: #C93B76;
+            border-radius: 2px 0 0 2px;
+            box-shadow: 0 0 10px #c93b7677;
+        }
+
+        label {
+            font-size: 10px;
+            color: #4D5562;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 50%;
+        margin-top: 1rem;
+
+        img {
+            width: 50px;
+            height: auto;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        img:nth-child(2) {
+            padding: 10px;
+            background-color: #C93B76;
+            border-radius: 10rem;
+            box-shadow: 0 0 10px #c93b7677;
+        }
+
+    }
+}
